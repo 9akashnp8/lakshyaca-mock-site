@@ -1,120 +1,186 @@
 html, body {
-    padding: 0;
-    margin: 0;
+    margin: 0px;
+    text-align: center;
     font-family: Roboto;
 }
 
-/* header styling starts here*/
+.home-page {
+    /*grid prop*/
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+
+    /*flex prop*/
+
+
+}
+
 .header {
+    /*grid prop*/
+    grid-column: 2 / 12;
+    /*flex prop*/
     display: flex;
-    align-items: center;
-
-    padding: 10px 150px;
-}
-
-.header-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-
-    margin-left: auto;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: space-around;
-
-    width: 118px;
-}
-
-div.header-menu p {
-    margin: 5px;
-}
-
-img.facebook-icon,
-img.whatsapp-icon,
-img.insta-icon {
-    height: 20px;
-    width: 20px;
-}
-/*header styling ends here*/
-
-/*nav menu styling starts here*/
-.nav-menu-list {
-    display: flex;
-    justify-content: space-around;
-
-    padding: 15px 150px;
-    margin: 0px;
-    background-color: #14213d;
-    color: #e5e5e5;
-}
-
-ul.nav-menu-list li {
-    list-style-type: none;
-    font-weight: bold;
-    font-size: 20px;
-    letter-spacing: 2px;
-}
-/*nav menu styling ends here*/
-
-/*banner styling starts here*/
-.home-banner {
-    display: flex;
-    justify-content: center;
-}
-
-.home-banner img {
-    flex: 1;
-}
-/*banner styling ends here*/
-
-/*brochure styling starts here*/
-.brochure-enquiry {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    font-size: 20px;
-    font-weight: bold;
-    color: #14213d;
-    background-color: #14213d;
-}
-
-.mba-acca,
-.bba-acca,
-.bcom-acca {
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    align-content: center;
+    /*gen prop*/
+}
 
+.nav-menu {
+    grid-column: 2 / 12;
 
 }
 
-.mba-acca > :nth-child(2) {
-    padding: 20px 20px;
+.home-banner {
+    grid-column: 1 / 13;
+
+}
+
+.brochure-enquiry {
+    grid-column: 2 / 12;
+
+    display: grid;
+    grid-template-columns: 1fr 20px 1fr;
+}
+
+.brochure {
+    grid-column: 1 / 2;
+
+}
+
+.brochure-items {
+    list-style-type: none;
+
+}
+
+.mbaacca,
+.bbaacca,
+.bcomacca,
+.mcomacca,
+.acca,
+.ca,
+.cmaus,
+.cmaindia {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+
+    margin: 8px 0px;
+    background-color: #ffe133;
+    border-radius: 5px;
+    height: 50px;
+}
+
+.coursetext {
+    flex-basis: 35%;
+
+}
+.downloadbut {
+    flex-basis: 35%;
     background-color: white;
-    margin: 0px;
+    border-radius: 5px;
+    align-self: stretch;
+    padding-top: 15px;
 }
 
-.mba-acca > :nth-child(1) {
-    padding: 20px 120px;
-    margin: 0px;
+.enquiry {
+    grid-column: 3 / 4;
 
-    background-color: yellow;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: stretch;
+    margin: 16px;
+    padding: 8px;
+
+    background-color: #ffe133;
+    border-radius: 5px;
 }
 
-.bba-acca > :nth-child(2) {
-    padding: 20px 20px;
+.name, 
+.mob,
+.email,
+.submit {
+    margin: 8px;
+    align-self: flex-start;
+}
+
+.contact {
+    margin: 0px 8px;
+}
+
+input {
+    width: 100%;
+}
+
+.contact {
     background-color: white;
-    margin: 0px;
+    border-radius: 3px;
 }
 
-.bba-acca > :nth-child(1) {
-    padding: 20px 120px;
-    margin: 0px;
-    background-color: yellow;
+.footer {
+    grid-column: 2 / 12;
+    background-color: #0b3c5d;
+    color: #fff;
+    font-weight: 500;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-text {
+    margin-right:30px;
+    text-align: left;
+    flex-basis: 33%;
+}
+
+.footer-logo {
+ flex-basis: 33%;
+}
+
+.footer-contact {
+    margin-left:30px;
+    text-align: right;
+}
+
+.terms {
+    grid-column: 2 / 12;
+    color: #fff;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo > img {
+    padding-top: 15px;
+}
+
+.header-contact {
+    flex-basis: 35%;
+}
+
+.header-contact-items {
+    /*flex prop*/
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+
+    list-style-type: none;
+    padding-top: 15px;
+}
+
+.nav-menu-items {
+    list-style-type: none;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    color: rgb(230, 230, 230);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.dark {
+    background-color: #0b3c5d;
 }
