@@ -29,6 +29,8 @@ html, body {
 .nav-menu {
     grid-column: 2 / 12;
 
+    grid-column: 1 / 13;
+
 }
 
 .home-banner {
@@ -38,6 +40,7 @@ html, body {
 
 .brochure-enquiry {
     grid-column: 2 / 12;
+    grid-column: 1 /13;
 
     display: grid;
     grid-template-columns: 1fr 20px 1fr;
@@ -119,7 +122,7 @@ input {
 }
 
 .footer {
-    grid-column: 2 / 12;
+    grid-column: 1 / 13;
     background-color: #0b3c5d;
     color: #fff;
     font-weight: 500;
@@ -145,7 +148,7 @@ input {
 }
 
 .terms {
-    grid-column: 2 / 12;
+    grid-column: 1 / 13;
     color: #fff;
 
     display: flex;
