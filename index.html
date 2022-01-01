@@ -3,149 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <title>Lakshya</title>
+    <style>
+        
+    </style>
 </head>
 <body>
-    <div class="home-page">
-        <div class="header light">
-            <div class="header-logo">
-                <img src="images/logo.png">
+    <!--Top header-->
+    <section class="p-3">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <img src="images/logo.png" alt="">
+                <div>
+                    <ul class="list-group list-group-horizontal">
+                        <li class="list-group-item"><i class="bi bi-facebook"></i></li>
+                        <li class="list-group-item"><i class="bi bi-twitter"></i></li>
+                        <li class="list-group-item"><i class="bi bi-instagram"></i></li>
+                    </ul>
+                </div>
             </div>
-            <div class="header-contact">
-                <ul class="header-contact-items">
-                    <li>Whatsapp</li>
-                    <li>Instagram</li>
-                    <li>Facebook</li>
+        </div>
+    </section>
+
+    <!--nav menu-->
+    <nav class="nav navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto nav-fill w-100 font-weight-bold">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#aboutus" class="nav-link">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#courses" class="nav-link">COURSES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#blog" class="nav-link">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#registration" class="nav-link">REGISTRATION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#more" class="nav-link">MORE</a>
+                    </li>
                 </ul>
             </div>
         </div>
-        <div class="nav-menu dark">
-            <ul class="nav-menu-items">
-                <li>HOME</li>
-                <li>ABOUT US</li>
-                <li>COURSES</li>
-                <li>BLOG</li>
-            </ul>
+    </nav>
+
+    <!--main banner-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <div class="home-banner light">
-            <img src="./images/banner.png">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/test-banner-2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/test-banner-3.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/test-banner.jpg" class="d-block w-100" alt="...">
+          </div>
         </div>
-        <div class="brochure-enquiry dark">
-            <div class="brochure">
-                <ul class="brochure-items">
-                    <li class="mbaacca">
-                        <div class="coursetext">
-                            <strong>MBA + ACCA</strong>
-                        </div>
-                        <div class="downloadbut">
-                            <strong>Download</strong>
-                        </div>
-                    </li>
-                    <li class="bbaacca">
-                        <div class="coursetext">
-                            <strong>BBA + ACCA</strong>
-                        </div>
-                        <div class="downloadbut">
-                            <strong>Download</strong>
-                        </div>
-                    </li>
-                    <li class="bcomacca">
-                        <div class="coursetext">
-                            <strong>BCOM + ACCA</strong>
-                        </div>
-                        <div class="downloadbut">
-                            <strong>Download</strong>
-                        </div>
-                    </li>
-                    <li class="mcomacca">
-                        <div class="coursetext">
-                            <strong>MCOM + ACCA</strong>
-                        </div>
-                        <div class="downloadbut">
-                            <strong>Download</strong>
-                        </div>
-                    </li>
-                    <li class="acca">
-                        <div class="coursetext">
-                            <strong>ACCA</strong>
-                        </div>
-                        <div class="downloadbut">
-                            <strong>Download</strong>
-                        </div>
-                    </li>
-                    <li class="ca">
-                        <div class="coursetext">
-                            <strong>CA</strong>
-                        </div>
-                        <div class="downloadbut">
-                            <strong>Download</strong>
-                        </div>
-                    </li>
-                    <li class="cmaus">
-                        <div class="coursetext">
-                            <strong>CMA US</strong>
-                        </div>
-                        <div class="downloadbut">
-                            <strong>Download</strong>
-                        </div>
-                    </li>
-                    <li class="cmaindia">
-                        <div class="coursetext">
-                            <strong>CMA India</strong>
-                        </div>
-                        <div class="downloadbut">
-                            <strong>Download</strong>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="enquiry">
-                <div class="name">
-                    <input value="Your name">
-                </div>
-                <div class="mob">
-                    <input value="Your mobile number">
-                </div>
-                <div class="email">
-                    <input value="Your email address">
-                </div>
-                <div class="submit">
-                    <button>Submit</button>
-                </div>
-                <div class="contact">
-                    <div class="text">
-                        <p>Contact Us</p>
-                    </div>
-                    <div class="image">
-                        <img src="./images/call-support.png">
-                    </div>
-                    <div class="number">
-                        <p>+91-9061277777</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer light">
-            <div class="footer-text">
-                <p>We have earned a great reputation as a key confidante and as a powerful institution as well as a close advisor to the aspiring candidates in CA, ACCA, CMA USA, CMA India and CS. 
-                    We provide a platform by availing all the courses in the syllabi thereby making it a single point destination to all aspirants.</p>
-            </div>
-            <div class="footer-logo">
-                <img src="images/logo-w.png">
-            </div>
-            <div class="footer-contact">
-                <P>LAKSHYA</P>
-                <p>Adv Easwara Iyer Rd, Pullepady, Kochi, Kerala 682035</p>
-                <p>+91 09061277777</p>
-                <p>info@lakshyaca.com</p>
-                <p>info@lakshyaclasses.com</p>
-            </div>
-        </div>
-        <div class="terms dark">
-            <p>2021 Lakshya | All right reserved.</p>
-            <p>Privacy Policy and Terms of Service Refund and Cancellation</p>
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
     </div>
+
+    <!--Brochure download section-->
+    <section class="p-5 text-light" style="background-color: #2d2f31;">
+        <div class="container">
+            <div class="row gx-5">
+                <h3>Download Borchure</h3>
+                <div class="col-md pt-2">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist" style="color: red;">
+                        <li class="nav-item" role="presentation">
+                          <button style="color: #ffe133;" class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#chartedacc" type="button" role="tab" aria-controls="home" aria-selected="true">CA</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button style="color: #ffe133;" class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#acca" type="button" role="tab" aria-controls="profile" aria-selected="false">ACCA</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button style="color: #ffe133;" class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#cmaus" type="button" role="tab" aria-controls="contact" aria-selected="false">CMA US</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content pt-2" id="myTabContent">
+                        <div class="tab-pane fade show active" id="chartedacc" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-secondary" type="button" style="background-color: #ffe133; color:black"><span class="text-dark fw-bold">CA Foundation</span> &nbsp; <i class="bi bi-download"></i></button>
+                                <button class="btn btn-secondary" type="button" style="background-color: #ffe133; color:black"><span class="text-dark fw-bold">CA Intermediate</span> &nbsp; <i class="bi bi-download"></i></button>
+                                <button class="btn btn-secondary" type="button" style="background-color: #ffe133; color:black"><span class="text-dark fw-bold">CA Final</span> &nbsp; <i class="bi bi-download"></i></button>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-pane fade" id="acca" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary" type="button" style="background-color: #ffe133; color:black"><span class="text-dark fw-bold">ACCA F1-F4</span> &nbsp; <i class="bi bi-download"></i></button>
+                                <button class="btn btn-primary" type="button" style="background-color: #ffe133; color:black"><span class="text-dark fw-bold">ACCA F5-F9</span> &nbsp; <i class="bi bi-download"></i></button>
+                                <button class="btn btn-primary" type="button" style="background-color: #ffe133; color:black"><span class="text-dark fw-bold">ACCA P-Level</span> &nbsp; <i class="bi bi-download"></i></button>
+                            </div> 
+                        </div>
+                        <div class="tab-pane fade" id="cmaus" role="tabpanel" aria-labelledby="contact-tab">
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary" type="button" style="background-color: #ffe133; color:black"><span class="text-dark fw-bold">CMA US Part 1</span> &nbsp; <i class="bi bi-download"></i></button>
+                                <button class="btn btn-primary" type="button" style="background-color: #ffe133; color:black"><span class="text-dark fw-bold">CMA US Part 2</span> &nbsp; <i class="bi bi-download"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm pt-3" style="background-color: #ffe133; color: black; border-radius: 5px;">
+                    <form>
+                        <div class="mb-3">
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Full Name">
+                        </div>
+                        <div class="mb-3">
+                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Your Mobile Number">
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Your Email Address">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                          </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Receive all the latest updates to your email?</label>
+                        </div>
+                        <button type="submit" class="btn btn-danger px-4 py-2 mb-3">Submit</button>
+                      </form>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <!--Footer section-->
+    <section class="p-3" style="background-color: #212529;">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center text-light">
+                <p class="m-0" style="width: 30%;">We have earned a great reputation as a key confidante and as a powerful institution as well as a close advisor to the aspiring candidates in CA, ACCA, CMA USA, CMA India and CS. We provide a platform by availing all the courses in the syllabi thereby making it a single point destination to all aspirants.</p>
+                <img src="images/logo-w.png" class="mx-5">
+                <ul class="list-unstyled m-0">
+                    <li class="mb-2" style="text-align: end;"><strong>LAKSHYA CA Campus</strong></li>
+                    <li class="mb-2" style="text-align: end;">Adv Easwara Iyer Rd, Pullepady, Kochi, Kerala 682035 &nbsp; <i class="bi bi-geo-alt-fill"></i></li>
+                    <li class="mb-2" style="text-align: end;">+91 09061277777 &nbsp; <i class="bi bi-telephone"></i></li>
+                    <li class="mb-2" style="text-align: end;">info@lakshyaca.com &nbsp; <i class="bi bi-envelope-fill"></i></li>
+                    <li class="mb-2" style="text-align: end;">info@lakshyaclasses.com &nbsp; <i class="bi bi-envelope"></i></li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!--copyright section-->
+    <section class="p-2 text-light" style="background-color: #161a1d;">
+        <div class="container">
+            <div class="pt-2 footer-items d-flex justify-content-between">
+                <div class="item1">
+                    <p>2021 Lakshya | All right reserved.</p>
+                </div>
+                <div class="item2">
+                    <p>Privacy Policy and Terms of Service</p>
+                </div>
+                <div class="item3">
+                    <p>Refund and Cancellation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <script src="js/bootstrap.bundle.js"></script>
 </body>
 </html>
