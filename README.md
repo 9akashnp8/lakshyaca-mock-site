@@ -1,5 +1,5 @@
 # **Website Mockup Challege: #1**
----
+
 Website #1 (of many) created as part of _Website Mockup Challenge (WMC)_
 >The WMC is a self challenge as part of learning web development. The challenge is to create mockups of existing website and the only rule is: **Peeks (inspects) into the website code are NOT ALLOWED**
 
